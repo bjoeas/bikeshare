@@ -12,6 +12,10 @@ The project is about analyzing bike share data from the cities of Chicago, Washi
 
 [Udacity file download](https://video.udacity-data.com/topher/2021/May/6094a7cc_all-project-files/all-project-files.zip)
 
+### Requirements
+Packages used for this Project:<br>
+[requirements.txt](requirements.txt)
+
 ### Credits
 Udacity Nanodegree Program - [Programming for Data Science with Python](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104) <br>
 Prepare for a data science career by learning the fundamental data programming tools: Python, SQL, command line, and git.
