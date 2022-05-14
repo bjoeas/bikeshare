@@ -113,18 +113,6 @@ def time_stats(df):
     print('Most common hour: {} with {} times in the data selection'.format(common_hour.idxmax(),
                                                                             common_hour[common_hour.idxmax()]))
 
-    # # display the most common month
-    # common_month = df['month'].mode()[0]
-    # print('Most common month:', common_month)
-    #
-    # # display the most common day of week
-    # common_day = df['day_of_week'].mode()[0]
-    # print('Most common day:', common_day)
-    #
-    # # display the most common start hour
-    # common_hour = df['hour'].mode()[0]
-    # print('Most common hour:', common_hour)
-
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-' * 40)
 
@@ -134,19 +122,6 @@ def station_stats(df):
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
-
-    # Speedtest .value_counts().idxmax() vs. .mode()[0]
-    # .mode()[0] was 8 out of 10 times a bit faster than .value_counts().idxmax()
-    #
-    # start_time = time.time()
-    # start_station = df['Start Station'].value_counts().idxmax()
-    # print('Most commonly used start station:', start_station)
-    # print(".value_counts().idxmax() - This took %s seconds.\n" % (time.time() - start_time))
-    #
-    # start_time = time.time()
-    # start_station2 = df['Start Station'].mode()[0]
-    # print('Most commonly used start station:', start_station2)
-    # print(".mode()[0] - This took %s seconds.\n" % (time.time() - start_time))
 
     # display most commonly used start station
     start_station = df['Start Station'].mode()[0]
