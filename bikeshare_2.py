@@ -123,19 +123,6 @@ def station_stats(df):
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
 
-    # Speedtest .value_counts().idxmax() vs. .mode()[0]
-    # .mode()[0] was 8 out of 10 times a bit faster than .value_counts().idxmax()
-    #
-    # start_time = time.time()
-    # start_station = df['Start Station'].value_counts().idxmax()
-    # print('Most commonly used start station:', start_station)
-    # print(".value_counts().idxmax() - This took %s seconds.\n" % (time.time() - start_time))
-    #
-    # start_time = time.time()
-    # start_station2 = df['Start Station'].mode()[0]
-    # print('Most commonly used start station:', start_station2)
-    # print(".mode()[0] - This took %s seconds.\n" % (time.time() - start_time))
-
     # display most commonly used start station
     start_station = df['Start Station'].mode()[0]
     print('Most commonly used start station:', start_station)
